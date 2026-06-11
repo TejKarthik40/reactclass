@@ -16,7 +16,7 @@ function App() {
     </section>
 
     <section>
-      <h1>cards</h1>
+   <center> <h1>PRODUCTS</h1></center> 
     
     <Products/>
     </section>

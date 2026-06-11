@@ -1,5 +1,10 @@
 
 function Header() {
+
+  let togglemode=()=>{
+  document.body.classList.toggle("change")
+  }
+
   return (
     <>
      <header style={{display:"flex",justifyContent:"space-evenly"}}   >
@@ -11,6 +16,7 @@ function Header() {
     <a href="">Pricing</a>
     <a href="">Products</a>
     <a href="">Support</a>
+    <button onClick={togglemode} >dark/light</button>
     </nav>
 
     </header>
