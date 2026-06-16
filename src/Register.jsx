@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {z} from "zod"
-
+import "./Register.css"
 let userschema=z.string().min(6,"username must need min 6characters").max(16,'max limit 16 characters')
 let passwordchema=z.string().min(8,"username must need min 8characters").max(16,'max limit 16 characters')
 let emailschema=z.email().min(3,"min charcters 3")
