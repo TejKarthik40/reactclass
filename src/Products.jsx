@@ -8,12 +8,9 @@ function Products({searchquery}) {
       fetch('https://backend-pvp-ecommerce.onrender.com/products')
     .then(response => response.json())
     .then(data => setproducts(data));
-    
-     
+ 
     }, [])
     
-
-
  let filteredproducts= products.filter((p)=>{
 return p.title.toLowerCase().includes(searchquery.toLowerCase())
   })
