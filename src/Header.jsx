@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import "./Header.css"
 function Header({setsearchquery}) {
 
   let togglemode=()=>{
@@ -8,7 +9,7 @@ function Header({setsearchquery}) {
   return (
     <>
      <header style={{display:"flex",justifyContent:"space-evenly"}}   >
-    <img  class='animate-bounce'     height={30} width={100}      src="https://zerodha.com/static/images/logo.svg" alt="logo" />
+    <img  className='animate-bounce'     height={30} width={100}      src="https://zerodha.com/static/images/logo.svg" alt="logo" />
 
     <input  onChange={(e)=>{setsearchquery(e.target.value)}}  type="text" placeholder="search products..." />
 
